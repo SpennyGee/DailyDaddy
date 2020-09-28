@@ -1,0 +1,63 @@
+<StartScreen>:
+	orientation: 'horizontal'
+	canvas.before:
+	    Rectangle:
+	        pos: self.pos
+	        size: self.size
+	        source: 'button_normal.png'
+
+BoxLayout:
+	orientation: 'vertical'
+	canvas.before:
+	    Rectangle:
+	        pos: self.pos
+	        size: self.size
+	        source: 'trick_daddy_hair.png'
+
+	
+	Label:
+		id: title
+		text: "Daily Daddy"
+		font_name: 'Lobster.ttf'
+		font_size: 100
+		
+	
+				
+	BoxLayout:
+		height: 90
+    	orientation: 'horizontal'
+    	padding: 20
+    	spacing:20
+    	
+		Label:
+			id: count
+			text: "Daddy Count: [b]0[/b]"
+			font_size: 50
+			markup: True
+			
+	BoxLayout:
+		height: 90
+    	orientation: 'horizontal'
+    	padding: 20
+    	spacing:20
+  
+		orientation: 'horizontal'
+		
+		Label:
+			id: left_border
+			test:"  "
+			
+		Button:
+			font_size: 25
+			bold: True
+			background_normal: 'button_normal.png'
+			background_down: 'button_down.png'
+			border: (2, 2, 2, 2)
+			id: start_stop
+			text: 'Start Listening'
+		    on_press: app.start_listening()
+		
+		Label:
+			id: right_border
+			test:"  "
+			
