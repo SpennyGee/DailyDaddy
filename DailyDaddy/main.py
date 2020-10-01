@@ -17,7 +17,7 @@ class DailyDaddyApp(App):
     stop_listening = None
     
     def start_listening(self):
-        # Starts to stops listening when button is pressed 
+        # On/Off 
         
         # change on to off, off to on
         self.currently_listening = not self.currently_listening
