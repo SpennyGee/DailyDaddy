@@ -2,16 +2,7 @@ from kivy.app import App
 import speech_recognition as sr
 
 GOOGLE_CLOUD_SPEECH_CREDENTIALS = r"""{
-     "type": "service_account",
-     "project_id": "triple-shadow-276319",
-     "private_key_id": "1bfc89372e1fad527290eb947439cb35d468f261",
-     "private_key": "-----BEGIN PRIVATE KEY-----\
-     "client_email": "starting-account-qspw946dixx1@triple-shadow-276319.iam.gserviceaccount.com",
-     "client_id": "100175108747364243003",
-     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-     "token_uri": "https://oauth2.googleapis.com/token",
-     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-     "client_x509_cert_url": ****
+     # YOUR CREDENTIALS HERE
    }"""
 
 class DailyDaddyApp(App):
